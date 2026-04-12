@@ -1,0 +1,29 @@
+.stockNews{
+    width: 100%;
+    padding: 0rem 2rem;
+    max-width: 1600px;
+    margin: 0 auto 5% auto;
+    .heading{
+        h4{
+            font-weight: 700;
+            color: var(--PrimaryColor);
+            font-size: clamp(1.5rem, 5vw, 5rem);
+            text-align: center;
+        }
+        
+    }
+    .newsHeading{
+        width: 100%;
+        padding: 1rem 0;
+        display: grid;
+        border-width: 2px 0;
+        border-color: var(--PrimaryColor);
+        border-style: solid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        
+    }   
+}
+.stockNews > *:nth-child(1){
+    border-left: none;
+}

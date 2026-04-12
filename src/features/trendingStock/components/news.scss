@@ -1,0 +1,32 @@
+.news{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-left: 1px solid #1c1c1c46;
+    padding: 0rem 1rem;
+    .description,.headline{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;    /* number of lines to show */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis; //text cuts off with no "..."
+    }
+    img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .date{
+        display: flex;
+        justify-content: space-between;
+    }
+    .readMore{
+        a{
+            color: var(--SecondaryColor);
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+}
+

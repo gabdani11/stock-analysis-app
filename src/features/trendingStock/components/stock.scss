@@ -1,0 +1,22 @@
+.stock{
+    background-color: #1c1c1c;
+    width: max-content;
+    padding: 1rem;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    .top
+    {
+
+        display: flex;
+        gap: 5rem;
+        justify-content: space-between;
+        svg{
+            height: 1.5rem;
+            width: auto;
+        }
+    }
+}

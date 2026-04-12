@@ -1,0 +1,85 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white ;
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: var(--PrimaryColor);
+    padding: 1rem 2rem;
+   .logo{
+    display: flex;
+    align-items: center;
+    img{
+        height: 2.5rem;
+        width: auto;
+    }
+    h1{
+        a{
+            text-decoration: none;
+            color: var(--PrimaryColor);
+        }
+        cursor: pointer;
+    }
+   }
+    ol{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        list-style: none;
+        cursor: pointer;
+        .searchBtn{
+            height: 1.5rem;
+            cursor: pointer;
+        }
+        .homeIcon{
+            height: 1.5rem;
+            width: auto;
+            cursor: pointer;
+        }
+        
+        li{
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            a{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: var(--PrimaryColor);
+            transition: all 0.2s ease;
+        }
+        a:active{
+            transform: scale(0.95);
+        }
+            
+
+        }
+        
+    }
+    .menuIcon{
+            cursor: pointer;
+            display: none;
+        }
+}
+
+}
+//Responsive
+@media (max-width: 768px) {
+    .navbar nav{ ol {
+        display: none;
+        
+    }
+    .menuIcon{
+        display: block;
+        width: auto;
+        height: 1.5rem;
+        align-self: center;
+        
+    }
+}
+
+    
+}

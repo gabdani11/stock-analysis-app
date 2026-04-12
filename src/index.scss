@@ -1,0 +1,13 @@
+@use "./assets/fonts/fonts.scss";
+:root{
+  --PrimaryColor:#1c1c1c;
+  --SecondaryColor:#6E00B3;
+}
+* , *::before, *::after { box-sizing: border-box;
+margin: 0;
+padding: 0; }
+html, body {
+  height: 100%;
+ width: 100%;
+  font-family: 'MyFont', system-ui, sans-serif;
+}

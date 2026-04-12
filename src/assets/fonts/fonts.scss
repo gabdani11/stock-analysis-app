@@ -1,0 +1,15 @@
+// src/styles/_fonts.scss
+@font-face {
+  font-family: 'MyFont';
+  src: url('./Satoshi-Variable.woff2') format('woff2');
+  font-weight: auto;
+  font-style: normal;
+  font-display: swap; // improves loading performance
+}
+@font-face {
+  font-family: 'MyFontItalic';
+  src: url('./Satoshi-VariableItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; // improves loading performance
+}
