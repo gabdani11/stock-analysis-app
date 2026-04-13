@@ -1,14 +1,14 @@
 import React from 'react'
 import './chatbot.scss'
 import { useState, useRef, useEffect } from 'react'
-import { UseAI } from './hook/UseAI'
+import { Usechat } from './hook/Usechat'
 
 const Chatbot = () => {
   const [active, setActive] = useState(false)
   const [question, setQuestion] = useState('')
   const [messages, setMessages] = useState([]) 
   const bottomRef = useRef(null) 
-  const { fetchAnswer, loading} = UseAI()
+  const { fetchAnswer, loading} = Usechat()
  const handleSubmit = async () =>{
     if(question.trim() === '') return;
     setMessages(prev => [...prev, {role:'user', text: question}]); //user message added to chat

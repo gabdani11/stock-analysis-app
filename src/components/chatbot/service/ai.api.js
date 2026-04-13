@@ -22,6 +22,7 @@ export async function getAnswer(question){
         return response.data.candidates[0].content.parts[0].text;
     } catch (error) {
         console.error('Error fetching AI answer:', error);
+        
         throw error;
     }
 
