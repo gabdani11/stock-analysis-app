@@ -1,5 +1,5 @@
 import React from 'react'
-import './stockTrending.scss'
+import './stocktrending.scss'
 import Stock from './components/Stock'
 import { UseStock } from './hook/UseStock.jsx'
 import { useEffect } from 'react'

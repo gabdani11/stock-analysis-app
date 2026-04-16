@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { use } from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import './home.scss'
 import bgImage from '../../assets/images/Firefly.jpg'
@@ -8,9 +8,11 @@ import Footer from '../../components/footer/Footer'
 import {gsap} from 'gsap'
 import { SplitText } from 'gsap/SplitText'
 import Chatbot from '../../components/chatbot/Chatbot'
+import { useEffect } from 'react'
 
 
 const Home = () => {
+  useEffect(() => {
    let split = SplitText.create('.heroHeading', {type:'words'})
    gsap.from(split.words, {
     opacity:0,
@@ -18,6 +20,7 @@ const Home = () => {
     duration: 1,
     stagger: 0.1
    })
+},[])
   return (
     <div >
         <Navbar/>

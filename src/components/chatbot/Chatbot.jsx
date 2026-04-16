@@ -15,7 +15,6 @@ const Chatbot = () => {
     setQuestion('');
     try{
       const response = await fetchAnswer(question);
-      console.log(response);
       setMessages(prev => [...prev, {role:'AI', text: response}]);//response from ai added to chat
       
     }catch(error){
