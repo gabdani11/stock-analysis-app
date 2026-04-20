@@ -4,7 +4,7 @@ export async function getStockContext(symbol) {
   try {
     // ❌ before: 'https://localhost:5173/api/finance/v8/finance/chart/${symbol}...'
     // ✅ after: just the path, no domain
-    const response = await axios.get(`https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=1d&range=1d`);
+    const response = await axios.get(`/api/finance?symbol=${symbol}`);
     
     return response.data;
   } catch (error) {
